@@ -29,7 +29,7 @@ import (
 	"net"
 	"fmt"
 	"path"
-	pb "upload/upload"
+	pb "upload/proto"
 )
 
 const (
