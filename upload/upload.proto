@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package upload;
+
+service Upload {
+  // Sends a File
+  rpc Fileup (Request) returns (Reply) {}
+}
+
+// The request sending file.
+message Request {
+  bytes data = 1;
+  string name = 2;
+}
+
+// The response done message
+message Reply {
+  string message = 1;
+}
